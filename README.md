@@ -1,2 +1,2 @@
 # TypeScript_Classes
-Tutorial Classes in TypeScript
+Tutorial on using Classes in TypeScript
