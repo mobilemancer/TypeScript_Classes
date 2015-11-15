@@ -1,6 +1,6 @@
 declare class ForceUser {
-    private midichlorians;
+    private _midichlorians;
     constructor(midichlorianCount: number);
-    toString(): void;
+    toString(): string;
 }
-declare function test(): void;
+declare var forceUserTest: void;

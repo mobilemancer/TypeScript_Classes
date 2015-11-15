@@ -1,17 +1,15 @@
 var ForceUser = (function () {
     function ForceUser(midichlorianCount) {
-        this.midichlorians = midichlorianCount;
+        this._midichlorians = midichlorianCount;
     }
     ForceUser.prototype.toString = function () {
-        var _this = this;
-        (function () { return "ForceUser has " + _this.midichlorians + " midichlorians"; });
+        return "ForceUser has " + this._midichlorians + " midichlorians";
     };
     ;
     return ForceUser;
 })();
-function test() {
+var forceUserTest = (function () {
     var forceUser;
     forceUser = new ForceUser(10);
-    alert(forceUser.toString());
-}
-test();
+    console.log(forceUser.toString());
+})();

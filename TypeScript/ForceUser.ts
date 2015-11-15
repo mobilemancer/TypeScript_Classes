@@ -1,19 +1,17 @@
 class ForceUser {
-	private midichlorians: number;
+	private _midichlorians: number;
 
 	constructor(midichlorianCount: number) {
-		this.midichlorians = midichlorianCount;
+		this._midichlorians = midichlorianCount;
 	}
 
 	public toString(): string {
-		return "ForceUser has " + this.midichlorians + " midichlorians";
+		return "ForceUser has " + this._midichlorians + " midichlorians";
 	};
 }
 
-function test() {
+var forceUserTest = (function() {
 	var forceUser: ForceUser;
 	forceUser = new ForceUser(10);
-	alert(forceUser.toString());
-}
-
-test();
+	console.log(forceUser.toString());
+})();
