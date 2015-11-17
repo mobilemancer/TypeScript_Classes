@@ -1,12 +1,12 @@
 class LessSimpleDroid {
-	private _expression: string = "";
+	private expression: string = "";
 
 	constructor(expression: string){
-		this._expression = expression;
+		this.expression = expression;
 	}
 	
 	public speak(): string {
-		return this._expression;
+		return this.expression;
 	}
 }
 

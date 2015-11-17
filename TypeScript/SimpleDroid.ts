@@ -1,8 +1,8 @@
 class SimpleDroid {
-	private _expression: string = "Bee-BEEP!";
+	private expression: string = "Bee-BEEP!";
 	
 	public speak(): string {
-		return this._expression;
+		return this.expression;
 	}
 }
 

@@ -1,15 +1,20 @@
 var ForceUser = (function () {
-    function ForceUser(midichlorianCount) {
-        this._midichlorians = midichlorianCount;
+    function ForceUser(midichlorianCount, lightSaberColor, test) {
+        this.midichlorianCount = midichlorianCount;
+        this.lightSaberColor = lightSaberColor;
     }
     ForceUser.prototype.toString = function () {
-        return "ForceUser has " + this._midichlorians + " midichlorians";
+        return "ForceUser has " + this.midichlorianCount + " midichlorians and wields a " + this.lightSaberColor + " lightsaber";
     };
-    ;
     return ForceUser;
 })();
-var forceUserTest = (function () {
+var forceUserTest1 = (function () {
     var forceUser;
-    forceUser = new ForceUser(10);
+    forceUser = new ForceUser(10, "blue", "test");
     console.log(forceUser.toString());
+})();
+var forceUserTest2 = (function () {
+    var forceUser;
+    forceUser = new ForceUser(10, "blue", "test");
+    console.log(forceUser.lightSaberColor);
 })();

@@ -1,5 +1,5 @@
 declare class LessSimpleDroid {
-    private _expression;
+    private expression;
     constructor(expression: string);
     speak(): string;
 }
