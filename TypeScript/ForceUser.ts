@@ -16,6 +16,6 @@ var forceUserTest1 = (function() {
 var forceUserTest2 = (function() {
 	var forceUser: ForceUser;
 	forceUser = new ForceUser(10, "blue", "test");
-	console.log(forceUser.lightSaberColor);
+	// console.log(forceUser.lightSaberColor);
 })();
 

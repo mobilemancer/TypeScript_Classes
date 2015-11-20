@@ -1,10 +1,10 @@
 class LessSimpleDroid {
 	private expression: string = "";
 
-	constructor(expression: string){
+	constructor(expression: string) {
 		this.expression = expression;
 	}
-	
+
 	public speak(): string {
 		return this.expression;
 	}

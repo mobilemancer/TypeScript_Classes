@@ -1,6 +1,6 @@
 class SimpleDroid {
 	private expression: string = "Bee-BEEP!";
-	
+
 	public speak(): string {
 		return this.expression;
 	}
